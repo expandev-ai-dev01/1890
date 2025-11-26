@@ -14,7 +14,7 @@ import { z } from 'zod';
  */
 
 export const zString = z.string().min(1);
-export const zNullableString = z.string().nullable();
+export const zNullableString = z.string().nullable().optional();
 export const zName = z.string().min(1).max(200);
 export const zNullableDescription = z.string().max(500).nullable();
 export const zBit = z.number().int().min(0).max(1);
